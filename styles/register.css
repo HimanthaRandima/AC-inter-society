@@ -1,0 +1,127 @@
+#register {
+  background: #00061680;
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* #register #navbar {
+  display: flex;
+  gap: 3em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 2.5em;
+} */
+
+#register h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin: 1.5em 0 0 0;
+}
+
+#register #registerSubText {
+  font-size: 0.9em;
+  margin: 0 0 2em 0;
+}
+
+#register #registerSubText #registerSubTextLink {
+  font-size: 1em;
+  margin: 0 0 2em 0;
+}
+
+#register #formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 2em;
+  margin-bottom: 3em;
+  box-sizing: border-box;
+}
+
+#register #codeFlowAndDimensionX,
+#register #analytIQ,
+#register #vortex,
+#register #mostPopular {
+  display: grid;
+  grid-template-columns: 30em 20em;
+  gap: 2em;
+  margin-top: 2rem;
+}
+
+#register #codeFlowAndDimensionXGradient,
+#register #analytIQGradient,
+#register #vortexGradient,
+#register #mostPopularGradient {
+  display: flex;
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1em;
+  padding: 0.6em;
+  border-radius: 0.2em;
+  justify-content: right;
+  text-align: right;
+}
+
+#register #codeFlowAndDimensionXGradient {
+  background: linear-gradient(#0479db, #46dd9a);
+}
+
+#register #analytIQGradient {
+  background: linear-gradient(#cf5604, #ffc576);
+}
+
+#register #vortexGradient {
+  background: linear-gradient(#f6041a, #ffc576);
+}
+
+#register #mostPopularGradient {
+  background: linear-gradient(#049f6c, #c2fe71);
+}
+
+#register #codeFlowAndDimensionX p {
+  font-size: 0.9em;
+  margin-bottom: 0.2em;
+}
+
+#register #analytIQ p,
+#register #vortex p {
+  font-size: 0.9em;
+}
+
+#register #formErrorMessage {
+  color: red;
+  padding-top: 0.3em;
+}
+
+#register #formDescription {
+  color: #ffffffaa;
+  padding-top: 0.3em;
+  line-height: 1.3em;
+}
+
+#register #mostPopular p {
+  color: red;
+  font-size: 0.9em;
+  margin-bottom: 0.2em;
+}
+
+#register #inputDescription {
+  color: #ffffffaa;
+  font-size: 1.1em;
+  padding-top: 0.5em;
+  line-height: 1.3em;
+}
+
+#register #form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#register #submitButton {
+  margin-top: 2em;
+}

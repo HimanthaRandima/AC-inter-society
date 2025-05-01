@@ -1,0 +1,533 @@
+#hero {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg,
+      #000c38 0.01%,
+      rgba(0, 6, 22, 0) 100%,
+      #000616 0%),
+    #000616;
+  overflow: hidden;
+}
+
+.section {
+  background-color: #00061680;
+}
+
+#hero #bgGrid {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-image: url(../public/assets/bgGrid.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 85px 85px #000616 inset;
+  position: absolute;
+  opacity: 60%;
+  top: 0;
+}
+
+#hero #bgPicture {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: linear-gradient(#00061600, #00061600, #000616), linear-gradient(#000616, #00061600, #00061600),
+    url(../public/assets/bgPicture1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  opacity: 20%;
+  z-index: 0;
+  top: 0;
+}
+
+#hero #content {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  min-height: 100dvh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem 2rem 2rem;
+  gap: 1rem;
+}
+
+/* #navbar {
+/* #navbar {
+  display: flex;
+  gap: 3em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3em;
+  z-index: 10;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 0.5em;
+  z-index: 100;
+  position: absolute;
+  right: 20px; 
+  top: 20px;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: white; 
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #155c96; 
+    padding: 1.5em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10000; 
+    border-radius: 10px;
+    /* filter:blur(8px); 
+    
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  }
+
+  .nav-links.open {
+    background-color: rgba(255, 255, 255, 0.01); 
+    display: flex;
+    /* backdrop-filter: blur(7px); 
+    z-index: 100;
+  }
+
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  #navbar {
+    gap: 1em;
+    opacity: 1;
+    margin-left: auto;
+    z-index: 10000;
+  }
+} */
+
+#hero #heroMiddleSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero #mainLogo {
+  width: 70em;
+  margin: -10.5%;
+  user-select: none;
+  pointer-events: none;
+}
+
+#hero #mainLogoV2 {
+  display: none;
+  margin: -15.5%;
+  transform: translateY(-2em);
+}
+
+#hero #mainTagline {
+  font-weight: 600;
+  font-size: 1.6em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+#hero #subTagline {
+  font-weight: 350;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#hero #loginButton {
+  border: 1px #ffffff40 solid;
+  padding: 1.5em 2.4em;
+  font-size: 0.9em;
+  border-radius: 1em;
+  margin-top: 3rem;
+}
+
+#hero #registerButton {
+  padding: 1.5em 2.1em;
+  font-size: 0.9em;
+  border-radius: 1em;
+}
+
+#hero #registerButton span {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 50em) {
+  #hero #mainTagline {
+    font-weight: 600;
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 1.2em;
+    margin: 1em 0 0.2em 0;
+  }
+
+  #hero #subTagline {
+    font-weight: 350;
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 27em) {
+  #hero #mainTagline {
+    font-weight: 600;
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 1.2em;
+    margin: 1em 0 0.2em 0;
+  }
+
+  #hero #subTagline {
+    font-weight: 350;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  #hero #mainLogo {
+    display: none;
+  }
+
+  #hero #mainLogoV2 {
+    display: block;
+    width: 15em;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  #hero #registerButton {
+    font-size: 0.78em;
+  }
+
+  #hero #loginButton {
+    font-size: 0.85em;
+  }
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  background: linear-gradient(#000616, #00061680);
+}
+
+#about p {
+  width: 60em;
+  line-height: 1.9em;
+  text-align: justify;
+  text-align-last: center;
+}
+
+@media only screen and (max-width: 75em) {
+  #about p {
+    width: calc(65em * 2 / 3);
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  #about p {
+    width: auto;
+    width: min(calc(100% - 4em), 32em);
+  }
+}
+
+/* categories section */
+
+#categories {
+  background: #00061680;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#categories #categoriesSubText {
+  margin-bottom: 4em;
+  font-size: 0.9em;
+}
+
+#categories #categoriesSubTextLink {
+  font-size: 1em;
+}
+
+#categories #cardGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 65em;
+  gap: 1.5em;
+  margin-bottom: 4rem;
+}
+
+#categories #card {
+  display: flex;
+  flex-direction: column;
+  gap: 9em;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1em;
+  padding: 2em 2em 1.5em 2em;
+  background: url(../public/assets/bgGrid.svg),
+    linear-gradient(#02081c, #02081c);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border: 1px solid #ffffff10;
+}
+
+#categories #card::before {
+  content: "";
+  width: 100%;
+  height: 0.3em;
+  top: 0;
+  position: absolute;
+}
+
+#categories #card:nth-child(1):before {
+  background-color: #0479db;
+}
+
+#categories #card:nth-child(2):before {
+  background-color: #46dd9a;
+}
+
+#categories #card:nth-child(3):before {
+  background-color: #cf5604;
+}
+
+#categories #card:nth-child(4):before {
+  background-color: #ff468c;
+}
+
+#categories #card:nth-child(5):before {
+  background-color: #ffc446;
+}
+
+#categories h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+#categories #card p {
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  text-transform: uppercase;
+}
+
+#categories #card #cardLogo {
+  width: 10.5em;
+  border-radius: 0;
+}
+
+#categories #card #cardImageWrapper {
+  height: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#categories #card #cardFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+#categories #card:nth-child(6) {
+  background: transparent;
+}
+
+#categories #card:nth-child(6) #cardFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+#categories #card #cardFooterButton {
+  border: 1px #ffffff40 solid;
+  padding: 1.5em 2.4em;
+  font-size: 0.9em;
+  border-radius: 1em;
+}
+
+#categories #card #registerButton {
+  /* border: 1px #ffffff40 solid; */
+  padding: 1.5em 2.4em;
+  font-size: 0.9em;
+  border-radius: 1em;
+}
+
+@media only screen and (max-width: 75em) {
+  #categories #cardGroup {
+    grid-template-columns: 1fr 1fr;
+    width: calc(65em * 2 / 3);
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  #categories #cardGroup {
+    grid-template-columns: 1fr;
+    width: min(calc(100% - 4em), calc(65em * 1 / 3));
+    gap: 2em;
+  }
+}
+
+#homeRnr {
+  background: #00061680;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3em 2em 2em 2em;
+}
+
+#homeRnr h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-bottom: 1.2em;
+}
+
+#homeRnr p {
+  text-align: justify;
+  text-align-last: center;
+  line-height: 1.9em;
+  width: 60em;
+}
+
+@media only screen and (max-width: 75em) {
+  #homeRnr p {
+    width: calc(65em * 2 / 3);
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  #homeRnr p {
+    width: auto;
+    width: min(100%, 32em);
+  }
+}
+
+#contactus {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 2em 4em 2em;
+  background: linear-gradient(#00061680, #000000, #00061680);
+}
+
+#contactus h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-bottom: 1.2em;
+}
+
+#contactus #cardGroup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  width: 65em;
+}
+
+#contactus #card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+  height: 12em;
+  background-color: transparent;
+  border: 1px solid #ffffff10;
+}
+
+#contactus #cardBackground {
+  position: absolute;
+  background-image: linear-gradient(#00000090, #00000090),
+    url(../public/assets/bgPicture2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 12em;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 60%;
+}
+
+#contactus h3 {
+  text-align: center;
+  font-weight: 500;
+}
+
+#contactus p {
+  text-align: center;
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+#contactus #telNoButton,
+#contactus #waNoButton {
+  height: 3.2em;
+}
+
+#contactus #buttonGroup p {
+  font-size: 1em;
+  padding-left: 0.2em;
+}
+
+@media only screen and (max-width: 75em) {
+  #contactus #cardGroup {
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(65em * 2 / 3);
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  #contactus #cardGroup {
+    grid-template-columns: 1fr;
+    width: min(100%, calc(65em * 1 / 3));
+    gap: 2em;
+  }
+}
+
+@media only screen and (max-width: 24em) {
+  #contactus #telNoButton p {
+    display: none;
+  }
+}

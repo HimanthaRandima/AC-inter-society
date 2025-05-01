@@ -1,0 +1,113 @@
+#subCategories {
+  background: #00061680;
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#catContent {
+  margin: 3rem;
+}
+
+#rnrAccordion {
+  width: 85vw;
+  margin-bottom: 4rem;
+}
+
+#rnrContent {
+  margin: 1.5rem;
+}
+
+#rnrDes {
+  max-width: 70rem;
+  text-align: center;
+  font-size: small;
+}
+
+#subCategories #subCategoriesHero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  padding: 0 2rem 2rem 2rem;
+  background: linear-gradient(#ffffff00, #00061600, #00030b),
+    url(../public/assets/bgGrid.svg),
+    linear-gradient(#020d16, #04123a, #00061680);
+  margin-bottom: 3em;
+}
+
+#subCategories #subCategoriesHero #subCategoriesLogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#subCategories #subCategoriesHero #logo {
+  width: 40em;
+}
+
+#subCategories #subCategoriesHero #button {
+  padding: 1.5em 2.4em;
+  font-size: 0.9em;
+  border-radius: 1em;
+}
+
+#subCategories #subCategoriesHero #button:nth-child(1) {
+  border: 1px #ffffff40 solid;
+  margin-right: 0.5em;
+}
+
+#heroSubTxt,
+#heroH1txt {
+  text-align: center;
+}
+
+#heroBtnTop {
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  display: flex;
+}
+
+p {
+  text-align: justify;
+}
+
+/* #subCategories #navbar {
+  display: flex;
+  gap: 3em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  opacity: 0.7;
+} */
+
+#subCategories h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin: 1em 0;
+  color: #c6c8cc;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+
+#subCategories h2 {
+  padding: 1.2em 0;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+#subCategories p,
+#subCategories li {
+  color: #ffffffcc;
+  line-height: 2em;
+}
+
+#subCategories li::marker {
+  color: red;
+}

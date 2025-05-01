@@ -1,0 +1,56 @@
+#navbar {
+  background-color: transparent;
+  width: fit-content;
+  border-radius: 1em;
+  backdrop-filter: none;
+  margin: 1.5em 0 0 0;
+  width: 100%;
+  padding: 0;
+}
+
+#navbar #navbarContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  width: 100%;
+}
+
+#navbar #links {
+  color: #ffffff;
+  opacity: 0.7;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+#navbar #hamburgerMenu{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  height: fit-content;
+}
+
+#navbar #line{
+  width: 1.5em;
+  height: 0.1em;
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 48em) {
+  #navbar #links {
+    display: none;
+  }
+
+  #navbar #divider {
+    display: none;
+  }
+
+  #navbar #navbarContent {
+    justify-content: end;
+  }
+
+  #navbar {
+    transform: translateX(1em);
+  }
+}

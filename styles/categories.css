@@ -1,0 +1,131 @@
+#categoriesPage {
+  background: #00061680;
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* #categoriesPage #navbar {
+  display: flex;
+  gap: 3em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 2.5em;
+} */
+
+#categoriesPage h1 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin: 1.5em 0;
+}
+
+#categoriesPage h2 {
+  border-radius: 0.5em;
+  padding: 1em 1.2em;
+  font-size: 1.6em;
+  font-weight: 700;
+  text-align: right;
+  margin-bottom: 1em;
+}
+
+#categoriesPage #codeFlowWrapper h2 {
+  background-color: #0479db;
+}
+
+#categoriesPage #dimensionXWrapper h2 {
+  background-color: #46dd9a;
+}
+
+#categoriesPage #analytIQWrapper h2 {
+  background-color: #cf5604;
+}
+
+#categoriesPage #vortexWrapper h2 {
+  background-color: #ff468c;
+}
+
+#categoriesPage #mostPopularWrapper h2 {
+  background-color: #ffc446;
+}
+
+#categoriesPage #tabs {
+  margin-top: 2.5em;
+}
+
+#categoriesPage #cardGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 70em;
+  gap: 2em;
+  margin-bottom: 1em;
+}
+
+#categoriesPage #card {
+  border-radius: 0.8em;
+  padding: 1.5em 1.6em 1em 1.6em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  /* height: 22em; */
+  height: 25em;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid #ffffffcc; */
+  /* background: url(../public/assets/bgGrid.svg), linear-gradient(#02081c, #02081c);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top; */
+}
+
+#cardLogo {
+  width: 8em;
+  border-radius: 0;
+}
+
+#cardLogoWrapper {
+  height: 4em;
+  margin-bottom: 1.3em;
+  /* background-color: #0479db; */
+  padding: 1em 1em 1.4em 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ffffff40;
+}
+
+#cardFooterButton {
+  padding: 1.5em 2.4em;
+  font-size: 0.8em;
+  border-radius: 1em;
+}
+
+#cardFooterButton:nth-child(1) {
+  border: 1px #ffffff40 solid;
+}
+
+#cardFooterButton:nth-child(2) {
+  margin-left: 0.5em;
+}
+
+/* #categoriesPage #card::before{
+    content: '';
+    width: calc(100% + 2em);
+    height: 0.3em;
+    top: 0;
+    position: absolute;
+    background: #0479db;
+    transform: translateX(-2em);
+} */
+
+#categoriesPage #card h3 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  font-weight: 550;
+}
+
+#categoriesPage #card p {
+  font-size: 0.9em;
+  color: #ffffffcc;
+}
