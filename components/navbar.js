@@ -28,14 +28,8 @@ export default function NavigationBar() {
         <Link href="/" id="links">
           Home
         </Link>
-        <Link href="/#about" id="links">
-          About
-        </Link>
         <Link href="/categories" id="links">
-          Categories
-        </Link>
-        <Link href="/#contactus" id="links">
-          Contact
+          Submit
         </Link>
         {session ? (
           <>
@@ -54,40 +48,25 @@ export default function NavigationBar() {
                     Home
                   </DropdownItem>
                   <DropdownItem
-                    key="about"
-                    onClick={() => router.push("/#about")}
-                  >
-                    About
-                  </DropdownItem>
-                  <DropdownItem
                     key="categories"
                     onClick={() => router.push("/categories")}
                   >
-                    Categories
-                  </DropdownItem>
-                  <DropdownItem
-                    key="contact"
-                    onClick={() => router.push("/#contactus")}
-                  >
-                    Contact Us
+                    Submit
                   </DropdownItem>
                 </DropdownSection>
 
                 <DropdownSection showDivider title="Actions">
                   <DropdownItem
                     key="submitWork"
-                    onClick={() => router.push("/submit")}
+                    onClick={() => router.push("/categories/submission")}
                   >
-                    Submit your work
+                    Submit your monthly plan
                   </DropdownItem>
                   <DropdownItem
                     key="register"
                     onClick={() => router.push("/register")}
                   >
                     Register for others
-                  </DropdownItem>
-                  <DropdownItem key="help" onClick={() => router.push("/rnr")}>
-                    Read R&R
                   </DropdownItem>
                 </DropdownSection>
 
@@ -119,22 +98,10 @@ export default function NavigationBar() {
                     Home
                   </DropdownItem>
                   <DropdownItem
-                    key="about"
-                    onClick={() => router.push("/#about")}
-                  >
-                    About
-                  </DropdownItem>
-                  <DropdownItem
                     key="categories"
                     onClick={() => router.push("/categories")}
                   >
-                    Categories
-                  </DropdownItem>
-                  <DropdownItem
-                    key="contact"
-                    onClick={() => router.push("/#contactus")}
-                  >
-                    Contact Us
+                    Submit
                   </DropdownItem>
                 </DropdownSection>
                 <DropdownSection title="Actions">
@@ -149,9 +116,6 @@ export default function NavigationBar() {
                     onClick={() => router.push("/login")}
                   >
                     Login
-                  </DropdownItem>
-                  <DropdownItem key="help" onClick={() => router.push("/rnr")}>
-                    Read R&R
                   </DropdownItem>
                 </DropdownSection>
               </DropdownMenu>

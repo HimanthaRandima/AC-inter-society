@@ -23,10 +23,10 @@ export default function RootLayout({
         <ThemeProvider defaultTheme="dark" attribute="class">
           <SessionProvider>
             {children}
-            <Footer />
+            {/* <Footer /> */}
           </SessionProvider>
         </ThemeProvider>
       </body>
-    </html>
+    </html>                   
   );
 }

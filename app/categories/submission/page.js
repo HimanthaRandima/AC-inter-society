@@ -17,6 +17,7 @@ import {
   Checkbox,
   DatePicker,
 } from "@nextui-org/react";
+import Navbar from "@/components/navbar";
 
 export default function Submission({
   event,
@@ -175,7 +176,8 @@ export default function Submission({
         // {success ? 
         //   <><p></p></>:
         //   <></>}
-        <div id="subCategoriesSubmission">
+        <><Navbar/>
+        <div id="subCategoriesSubmission" className="customSubCat">
           <Card id="formContainer">
             <form id="form" onSubmit={handleSubmit}>
             <Input
@@ -210,7 +212,7 @@ export default function Submission({
                   onValueChange={(value) =>
                     handleInputChange("driveLink", value)
                   }/>
-
+              <div className="extra-space"></div>
               <Textarea
                 label="Monthly Plan"
                 type="text"
@@ -219,12 +221,14 @@ export default function Submission({
                   handleInputChange("description", value)
                 }
               />
+                            <div className="extra-space"></div>
+
               <Button id="submitButton" isLoading={isSubmitting} type="submit">
                 Submit
               </Button>
             </form>
           </Card>
-        </div>
+        </div></>
       )}
     </>
   );

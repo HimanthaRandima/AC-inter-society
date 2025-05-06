@@ -1,9 +1,9 @@
-import ogImage from "@/public/assets/ogimage.jpg";
+import ogImage from "@/public/assets/acicts.png";
 import favicon from "@/public/favicon.ico";
 
 export default function Metadata({ title, url }) {
-  const pageDescription = `PULZ, the annual ICT Day of Ananda College, is a vibrant inter-school competition celebrating technological innovation and collaboration, inspiring creativity in coding, design, gaming, and problem-solving since 2006.`;
-  const pageTitle = `PULZ24 | ${title ? title : "Sri Lanka's Premier ICT Day by Ananda College"}`;
+  const pageDescription = `Ananda College Society Management`;
+  const pageTitle = `Ananda College Society Management`;
   const ogImageURL = ogImage.src;
   const pageURL = `${process.env.NEXTAUTH_URL}/${url}`;
 

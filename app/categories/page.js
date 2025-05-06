@@ -5,11 +5,12 @@ import { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
 import "@/styles/categories.css";
+import "@/styles/subCategories.css";
 import analytiqLogo from "@/public/assets/analytiqLogo.png";
 import codeflowLogo from "@/public/assets/codeflowLogo.png";
 import dimensionxLogo from "@/public/assets/dimensionxLogo.png";
 import mostPopularLogo from "@/public/assets/mostPopularLogo.png";
-import vortexLogo from "@/public/assets/vortexLogo.png";
+import acicts from "@/public/assets/acicts.png";
 import Navbar from "@/components/navbar";
 import CountdownTimer from "@/components/countdown";
 
@@ -17,30 +18,30 @@ export default function CodeFlow() {
   const cardData = [
     {
       id: "codeFlow",
-      logoSrc: codeflowLogo.src,
+      logoSrc: acicts.src,
       title: "Monthly Plans",
       description:
-        "Unleash your creativity in web development, from crafting captivating interfaces to coding seamless functionality",
+        "Upload your monthly plan",
       learnMoreLink: "/categories/codeflow/webdev",
-      registerLink: "/register?tabIndex=codeFlowAndDimensionX",
+      registerLink: "/categories/submission",
     },
     {
       id: "analytIQ",
-      logoSrc: codeflowLogo.src,
+      logoSrc: acicts.src,
       title: "Achievements",
       description:
-        "Engage your problem-solving skills in algorithm competition, where participants craft efficient solutions to intricate challenges.",
+        "Upload your monthly achievements",
       learnMoreLink: "/categories/codeflow/algorithm",
-      registerLink: "/register?tabIndex=codeFlowAndDimensionX",
+      registerLink: "/categories/achievements",
     },
     {
       id: "dimensionX",
-      logoSrc: dimensionxLogo.src,
+      logoSrc: acicts.src,
       title: "Events",
       description:
-        "Unleash artistic prowess in the poster design competition, shaping impactful narratives through compelling designs.",
+        "Upload the events that you've done in this month",
       learnMoreLink: "/categories/dimensionx/postdesign",
-      registerLink: "/register?tabIndex=codeFlowAndDimensionX",
+      registerLink: "/categories/events/",
     },
   ];
 
@@ -60,6 +61,7 @@ export default function CodeFlow() {
     <section>
       <section id="categoriesPage">
         <Navbar />
+        <div className="extra-space"></div>
         <div id="cardGroup">
           {filteredCardData.map((card, index) => (
             <Card key={index} id="card">
@@ -75,14 +77,7 @@ export default function CodeFlow() {
                 <p>{card.description}</p>
               </div>
               <div>
-                <Button
-                  as={Link}
-                  href={card.learnMoreLink}
-                  id="cardFooterButton"
-                  variant="light"
-                >
-                  Learn More
-                </Button>
+                
                 <Button
                   as={Link}
                   href={card.registerLink}
@@ -96,7 +91,6 @@ export default function CodeFlow() {
           ))}
         </div>
       </section>
-      <CountdownTimer targetDate="2024-10-05T00:00:00" />
     </section>
   );
 }

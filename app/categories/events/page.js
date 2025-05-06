@@ -17,7 +17,7 @@ import {
   Checkbox,
   DatePicker,
 } from "@nextui-org/react";
-
+import Navbar from "@/components/navbar";
 export default function Submission({
   event,
   githubLink,
@@ -176,7 +176,9 @@ export default function Submission({
         // {success ? 
         //   <><p></p></>:
         //   <></>}
-        <div id="subCategoriesSubmission">
+        <>
+        <Navbar/>
+        <div id="subCategoriesSubmission" className="customSubCat">
           <Card id="formContainer">
             <form id="form" onSubmit={handleSubmit}>
             <Input
@@ -210,7 +212,7 @@ export default function Submission({
                   onValueChange={(value) =>
                     handleInputChange("eventName", value)
                   }/>
-            
+            <div className="extra-space"></div>
             <Input
                   isRequired
                   description={
@@ -242,7 +244,7 @@ export default function Submission({
                   onValueChange={(value) =>
                     handleInputChange("participants", value)
                   }/>
-
+              <div className="extra-space"></div>
                 <Input
                   isRequired
                   description={
@@ -274,7 +276,7 @@ export default function Submission({
                   onValueChange={(value) =>
                     handleInputChange("date", value)
                   }/>
-
+                <div className="extra-space"></div>
 <Input
                   isRequired
                   description={
@@ -306,7 +308,7 @@ export default function Submission({
                   onValueChange={(value) =>
                     handleInputChange("images", value)
                   }/>
-            
+              <div className="extra-space"></div>
               <Textarea
                 label="Brief Description"
                 type="text"
@@ -315,12 +317,13 @@ export default function Submission({
                   handleInputChange("description", value)
                 }
               />
+              <div className="extra-space"></div>
               <Button id="submitButton" isLoading={isSubmitting} type="submit">
                 Submit
               </Button>
             </form>
           </Card>
-        </div>
+        </div></>
       )}
     </>
   );
