@@ -42,7 +42,7 @@
   min-height: 100vh;
   min-height: 100dvh;
   background: linear-gradient(#00061600, #00061600, #000616), linear-gradient(#000616, #00061600, #00061600),
-    url(../public/assets/bgPicture1.png);
+    url(../public/assets/bg1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;

@@ -11,10 +11,8 @@ export default function Footer() {
 
   const quickLinks = [
     { name: "Home", url: "/" },
-    { name: "About", url: "/#about" },
-    { name: "Categories", url: "/categories?tabIndex=all" },
-    { name: "Rules and Regulations", url: "/rnr" },
-    { name: "Contact", url: "/#contact" },
+    { name: "Submit", url: "/categories?tabIndex=all" },
+    { name: "Register", url: "/register" },
   ];
 
   return (
@@ -44,9 +42,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm mb-6 text-center md:text-left leading-relaxed">
-              PULZ, the flagship annual ICT Day of the Ananda College ICT
-              Society, is a vibrant inter-school competition platform
-              celebrating technological innovation and collaboration.
+            Ananda College Clubs and Societies Web Portal is a central platform that highlights student clubs, their events, and achievements, helping students stay connected and involved.
             </p>
             <div className="flex justify-start gap-4 mt-6 w-full">
               <a

@@ -201,13 +201,14 @@ export default function Register() {
           onSelectionChange={setTabIndex}
         >
           {!session && (
-            <Tab key="codeFlowAndDimensionX" title="Coding & Graphic D.">
+            <Tab key="codeFlowAndDimensionX" title="Register">
               <div id="codeFlowAndDimensionX">
                 <div id="codeFlowAndDimensionXForm">
                   <form
                     id="form"
                     onSubmit={codeFlowAndDimensionXFormHandleSubmit}
                   >
+                    <p>This form is only for your society officials.</p>
                     <Input
                       isRequired
                       description={
@@ -390,7 +391,7 @@ export default function Register() {
                   </form>
                 </div>
                 <div id="codeFlowAndDimensionXGradient">
-                  CodeFlow & DimensionX
+                  Register
                 </div>
               </div>
             </Tab>

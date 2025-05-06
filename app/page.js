@@ -36,7 +36,8 @@ export default function Home() {
         <div id="content">
           <Navbar />
           <div id="heroMiddleSection">
-            <h1 id="subTagline">ANANDA COLLEGE</h1>
+          <h1 id="mainTagline">Ananda College Clubs and Societies {"(CAS)"} Web Portal</h1>
+            <h1 className="ml-10 mr-10" id="subTagline">Register your society or log in to update achievements, monthly plans, and event details from your dashboard</h1>
             {!session ? (
               <Button
                 as={Link}
@@ -44,7 +45,7 @@ export default function Home() {
                 variant="light"
                 onClick={() => signIn({ callbackUrl: "/" })}
               >
-                LOGIN
+                LOGIN TO YOUR DASHBOARD
               </Button>
             ) : (
               <Button
@@ -58,7 +59,7 @@ export default function Home() {
             )}
           </div>
           <Button as={Link} href="/register" id="registerButton" variant="flat">
-            <span>REGISTER NOW!</span>
+            <span>REGISTER YOUR SOCIETY</span>
           </Button>
           {/* {session ? (
             // If the user is logged in, show the button

@@ -2,8 +2,8 @@ import ogImage from "@/public/assets/acicts.png";
 import favicon from "@/public/favicon.ico";
 
 export default function Metadata({ title, url }) {
-  const pageDescription = `Ananda College Society Management`;
-  const pageTitle = `Ananda College Society Management`;
+  const pageDescription = `casportal24`;
+  const pageTitle = `casportal24`;
   const ogImageURL = ogImage.src;
   const pageURL = `${process.env.NEXTAUTH_URL}/${url}`;
 
